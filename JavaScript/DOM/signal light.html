@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        
+        .a{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 400px;
+            width: 200px;
+            background-color: rgba(3, 1, 1, 0.911);
+            margin-left: 630px;
+            border-radius: 50px;
+            margin-top: -250px;
+        }
+        .b{
+            height: 70px;
+            width: 70px;
+            background-color:gray;
+            border-radius: 50%;
+        }
+        .c{
+            height: 70px;
+            width: 70px;
+            background-color:gray;
+            border-radius: 50%;
+        }
+        .d{
+            height: 70px;
+            width: 70px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+        .t{
+            height: 60px;
+            width: 150px;
+            background-color: black;
+            color: white; 
+            margin-top: 30px;
+            margin-left: 250px; 
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            
+        }
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    <script>
+
+        function red(){
+            clearlight();
+            clearcolor();
+            clearshadow();
+            var a =document.getElementById("stoplight").style.backgroundColor="red";
+            var a=document.getElementById("stoplight").style.boxShadow = "4px 4px 20px 20px rgb(218, 111, 111)";
+            var b =document.getElementById("stopbutton").style.backgroundColor="red";
+            
+        }
+         function yellow(){
+            clearlight();
+            clearcolor();
+            clearshadow();
+            var a= document.getElementById("slowlight").style.backgroundColor="yellow";
+            var a= document.getElementById("slowlight").style.boxShadow = "4px 4px 20px 20px rgb(218, 218, 115)";
+            var b =document.getElementById("slowbutton").style.backgroundColor="yellow";
+           
+        }
+        function green(){
+            clearlight();
+            clearcolor();
+            clearshadow();
+            var a=document.getElementById("golight").style.backgroundColor="green";
+             var a=document.getElementById("golight").style.boxShadow = "4px 4px 20px 20px rgb(109, 207, 109)";
+            var b =document.getElementById("gobutton").style.backgroundColor="green";
+           
+        }
+
+        function clearlight(){
+            document.getElementById("stoplight") .style.backgroundColor="gray";
+            document.getElementById("slowlight") .style.backgroundColor="gray";
+            document.getElementById("golight") .style.backgroundColor="gray";
+        }
+        function clearcolor(){
+             document.getElementById("stopbutton").style.backgroundColor="black";
+             document.getElementById("slowbutton").style.backgroundColor="black";
+             document.getElementById("gobutton").style.backgroundColor="black";
+        }
+        function clearshadow(){
+            document.getElementById("stoplight").style.boxShadow = "4px 4px 20px 20px black" ;
+            document.getElementById("slowlight") .style.boxShadow = "4px 4px 20px 20px black";
+            document.getElementById("golight") .style.boxShadow = "4px 4px 20px 20px black";
+        }
+         
+    </script>
+
+
+</head>
+<body class="col-md-12 col-sm-12 col-lg-12">
+    <h1>TRAFFIC SIGNAL LIGHT</h1>
+    <div class="but">
+        <button class="btn t" id="stopbutton" onclick="red()" >Stop</button><br>
+        <button class="btn t" id="slowbutton" onclick="yellow()">Get Ready</button><br>
+        <button class="btn t" id="gobutton" onclick="green()">Go</button>
+     </div>   
+    <div class="a">
+        <div id="stoplight" class="b"></div> 
+        <div  id="slowlight"  class="c"></div>
+        <div  id="golight" class="d"></div>
+    </div>
+</body>
+</html>

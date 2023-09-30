@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the value :</label>
+    <input type="text" id="a1" >
+    <select id="b1"><option>Select the option</option></select>
+    <button onclick="data()">click</button><br>
+    
+
+
+    <script>
+            function data(){
+            var a= parseInt(document.getElementById("a1").value);
+            var p="";
+            for(var i=0;i<=a;i++)
+            {
+                p += "<option>"+i
+            }
+            document.getElementById("b1").innerHTML = p;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objecttask2</title>
+</head>
+
+<body>
+    <script>
+        var movie = {
+            title: 'Baahubali',
+            director: 'Rajamouli',
+            producers: ['Sobhu', 'Raghavendra', 'Prasad'],
+            'lead actors with their roles': {
+                prabhas: 'Baahubali',
+                anushka: 'Devasena',
+                rana: 'Bhallaladeva',
+                tamannah: 'Avanthika'
+            }
+
+        }
+
+        document.write(movie.title + "<br>");
+        document.write(movie.director + "<br>");
+        document.write(movie.producers + "<br>");
+        document.write(movie["lead actors with their roles"].prabhas + "<br>");
+        document.write(movie["lead actors with their roles"].anushka + "<br>");
+        document.write(movie["lead actors with their roles"].rana + "<br>");
+        document.write(movie["lead actors with their roles"].tamannah + "<br>");
+
+
+    </script>
+
+
+</body>
+
+</html>

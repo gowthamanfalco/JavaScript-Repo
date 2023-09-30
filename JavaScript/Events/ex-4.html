@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>First_value :</label>
+    <input type="text"id="p"><br>
+    <label>Second_value :</label>
+    <input type="text"id="c"><br>
+    <button onclick="data()">click</button>
+
+    <script>
+        function data(){
+            var a=(document.getElementById("p").value);
+            var b=(document.getElementById("c").value);
+            
+            if ((a.length==0)||(b.length==0)){
+                alert(" One of your data is empty, kindly fill it and try again 😊");
+            }
+            else if (a==b){
+                alert(" Data are  equal")
+            }
+            else{
+                alert("Data are Not equal")
+            }
+            
+        }
+    </script>
+</body>
+</html

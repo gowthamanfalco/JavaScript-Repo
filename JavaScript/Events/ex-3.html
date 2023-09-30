@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>First_value :</label>
+    <input type="text"id="a"><br>
+    <label>Second_value :</label>
+    <input type="text"id="b"><br>
+    <button onclick="data()">click</button>
+
+    <script>
+        function data(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("b").value);
+            if (a==b){
+                alert(" Data are Equal");
+            }
+            else{
+                alert(" Data are Not equal")
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Natural(n) 
+      {
+	   if (typeof n !== 'number') 
+	        return 'Not a number'; 
+			
+	 return (n >= 0.0) && n !== Infinity;
+	    }
+console.log(Natural(-15));
+console.log(Natural(1));
+console.log(Natural(10.22));
+console.log(Natural(10/0));
+
+    </script>
+</body>
+</html>

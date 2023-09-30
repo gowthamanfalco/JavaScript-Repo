@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function create_dom()
+        {
+            var newDiv = document.createElement('div');
+            var text_1 = document.createTextNode("Login Page");
+            var ip_1 = document.createElement('input');
+            var btn_1 = document.createElement('button');
+            var btn_text = document.createTextNode("Click");
+            newDiv.appendChild(text_1);
+            btn_1.appendChild(btn_text);
+            newDiv.appendChild(ip_1);
+            newDiv.appendChild(btn_1);
+            document.body.appendChild(newDiv);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="create_dom()">Click</button>
+</body>
+</html>
